@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html style="font-size: 16px;" lang="es"><head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="keywords" content="Poke tazones, Fresco, Saludable y Sabroso, a cada cuenco, Saludable y sabroso, Saludable y sabroso, en el planeta, nuestros poke bowls, contactos">
+    <meta name="description" content="">
+    <title>Casa</title>
+    <link rel="stylesheet" href="Formpaquete.css" media="screen">
+<link rel="stylesheet" href="Formpaqueteindex.css" media="screen">
+    <script class="u-script" type="text/javascript" src="Formpaquetequery.js" defer=""></script>
+    <script class="u-script" type="text/javascript" src="Formpaquete.js" defer=""></script>
+    <meta name="generator" content="Nicepage 6.17.0, nicepage.com">
+    <meta name="referrer" content="origin">
+    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
+    <link id="u-page-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather:300,300i,400,400i,700,700i,900,900i">
+    
+    
+    
+    <script type="application/ld+json">{
+		"@context": "http://schema.org",
+		"@type": "Organization",
+		"name": "",
+		"logo": "images/839049c7-e70e-4f88-90f0-fc4598e80e2c.jpg"
+}</script>
+    <meta name="theme-color" content="#478ac9">
+    <meta property="og:title" content="Casa">
+    <meta property="og:type" content="website">
+  <meta data-intl-tel-input-cdn-path="intlTelInput/"></head>
+  <body data-home-page="Casa.html" data-home-page-title="Casa" data-path-to-root="./" data-include-products="false" class="u-body u-xl-mode" data-lang="es"><header class="u-clearfix u-header u-header" id="sec-2f21"><div class="u-clearfix u-sheet u-sheet-1">
+        <a href="#" class="u-image u-logo u-image-1" data-image-width="606" data-image-height="598">
+          <img src="images/839049c7-e70e-4f88-90f0-fc4598e80e2c.jpg" class="u-logo-image u-logo-image-1">
+        </a>
+        <h2 class="u-align-center u-text u-text-default u-text-1">Sierra travel</h2>
+      </div></header>
+    <section class="u-clearfix u-container-align-center u-section-1" id="sec-3a1a">
+      <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+        <div class="u-form u-form-1">
+
+          <form id="contactForm">
+            <label for="name">Nombre de quien envía:</label>
+            <input type="text" id="name" name="name" placeholder="Introduce tu nombre" class="u-input u-input-rectangle" required>
+            <br><br>
+    
+            <label for="phone">Teléfono:</label>
+            <input type="tel" id="phone" name="phone" placeholder="Introduce tu teléfono" class="u-input u-input-rectangle" required>
+            <br><br>
+    
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Introduce tu correo electrónico" class="u-input u-input-rectangle" required>
+            <br><br>
+    
+            <label for="trackingNumber">Número de rastreo:</label>
+            <input type="text" id="trackingNumber" name="trackingNumber" placeholder="Introduce el número de rastreo" class="u-input u-input-rectangle" required>
+            <br><br>
+    
+            <label for="recipient">Persona que recibe:</label>
+            <input type="text" id="recipient" name="recipient" placeholder="Introduce el nombre de la persona que recibe" class="u-input u-input-rectangle" required>
+            <br><br>
+    
+            <button type="submit" class="u-btn u-btn-submit u-button-style">Enviar</button>
+        </form>
+    
+        <!-- Script de EmailJS -->
+        <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+        <script type="text/javascript">
+            // Inicializa EmailJS con tu ID de usuario (reemplaza con tu Public Key)
+            emailjs.init('nT1K2hFTWev3-Dsxl'); // Reemplaza 'YOUR_PUBLIC_KEY' con tu Public Key de EmailJS
+    
+            // Envío del formulario
+            document.getElementById('contactForm').addEventListener('submit', function(e) {
+                e.preventDefault(); // Evita el envío predeterminado
+    
+                // Envía usando EmailJS
+                emailjs.sendForm('service_k5kuqq7', 'template_7rp46fg', this)
+                    .then(function(response) {
+                        alert('Correo enviado con éxito');
+                    }, function(error) {
+                        alert('Error al enviar el correo: ' + JSON.stringify(error));
+                    });
+            });
+        </script>
+        </div>
+      </div>
+    </section>
+    
+    
+    
+    <footer class="u-align-center u-clearfix u-container-align-center u-footer u-grey-80 u-footer" id="sec-5ae2"><div class="u-clearfix u-sheet u-sheet-1">
+        <p class="u-small-text u-text u-text-variant u-text-1"> © 2024 Sierra Travel. Todos los derechos reservados.</p>
+      </div></footer>
+   
+  
+</body></html>
