@@ -37,22 +37,22 @@
         <div class="u-form u-form-1">
           <form id="flightForm">
             <!-- Check-in -->
-            <label for="checkin">Fecha de salida:</label>
+            <label for="checkin">Fecha de entrada:</label>
             <input type="date" id="checkin" name="checkin" class="u-input u-input-rectangle" required>
             <br><br>
       
             <!-- Check-out -->
-            <label for="checkout">Fecha de regreso:</label>
+            <label for="checkout">Fecha de salida:</label>
             <input type="date" id="checkout" name="checkout" class="u-input u-input-rectangle" required>
             <br><br>
       
             <!-- Número de viajeros -->
-            <label for="travelers">Número de Viajeros:</label>
+            <label for="travelers">Cantidad de personas:</label>
             <input type="number" id="travelers" name="travelers" placeholder="Introduzca la cantidad de viajeros" class="u-input u-input-rectangle" required>
             <br><br>
       
             <!-- Ciudad del vuelo -->
-            <label for="flight_city">Ciudad de salida:</label>
+            <label for="flight_city">Ciudad a visitar:</label>
             <input type="text" id="flight_city" name="flight_city" placeholder="Introduzca una ciudad" class="u-input u-input-rectangle" required>
             <br><br>
       
@@ -97,7 +97,7 @@
                 // Envía usando EmailJS
                 emailjs.sendForm('service_x7ir8lw', 'template_k3sifvd', this)
                     .then(function(response) {
-                        alert('Solicitud enviada con éxito');
+                        alert('Correo enviado con éxito');
                     }, function(error) {
                         alert('Error al enviar el correo: ' + JSON.stringify(error));
                     });
