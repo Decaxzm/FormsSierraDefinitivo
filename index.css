@@ -438,7 +438,9 @@
   border-radius: 8px;
   display: flex;
   align-items: center;
-  
+  max-width: 1500px; /* Ajusta según el tamaño que desees */
+  margin: 0 auto;
+    box-sizing: border-box; /* Asegura que el relleno no afecte el tamaño del panel */
 }
 .btn-venta {
   background-color: #28a745;
