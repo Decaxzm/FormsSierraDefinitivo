@@ -441,6 +441,9 @@
   max-width: 1500px; /* Ajusta según el tamaño que desees */
   margin: 0 auto;
     box-sizing: border-box; /* Asegura que el relleno no afecte el tamaño del panel */
+    justify-content: space-between; /* Espaciado entre elementos */
+    display: flex;
+    flex-wrap: wrap;
 }
 .btn-venta {
   background-color: #28a745;
@@ -463,11 +466,15 @@
 .producto-panel h3 {
   margin: 0;
   flex-grow: 1;
+  margin: 10px 0; /* Agrega margen arriba y abajo del texto */
+  padding: 10px;
 }
 
 .producto-panel p {
   transform: translateX(-20px);
   text-align: left;
+  margin: 10px 0; /* Agrega margen arriba y abajo del texto */
+  padding: 10px;
 }
 #productos {
   background-color: #fff;
@@ -483,4 +490,5 @@
   border-radius: 4px;
   border: 1px solid #ccc;
 }
+
 
